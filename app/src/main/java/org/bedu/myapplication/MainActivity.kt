@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btn1.setOnClickListener(){
             binding.textView.text = "Soy tu padre"
+            binding.imageView.setImageResource(R.drawable.ic_baseline_whatshot_24)
         }
     }
 }
