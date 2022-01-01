@@ -2,6 +2,7 @@ package org.bedu.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.squareup.picasso.Picasso
 import org.bedu.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btn1.setOnClickListener(){
-            binding.textView.text = "Soy tu padre"
-            binding.imageView.setImageResource(R.drawable.ic_baseline_whatshot_24)
+            binding.textView.text = "I am your Father"
+            val image = binding.imageView
+            Picasso.get().load("https://www.vectoresparaestampar.com/wp-content/uploads/2021/05/Yo-soy-tu-padre.jpg").into(image)
         }
     }
 }
