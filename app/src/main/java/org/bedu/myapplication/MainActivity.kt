@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btn1.setOnClickListener(){
-            binding.textView.text = "I am your Father"
+            binding.textView.text = "I am your Uncle"
             val image = binding.imageView
             Picasso.get().load("https://www.vectoresparaestampar.com/wp-content/uploads/2021/05/Yo-soy-tu-padre.jpg").into(image)
         }
