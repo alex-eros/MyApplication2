@@ -14,10 +14,26 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var count =0
+
         binding.btn1.setOnClickListener(){
-            binding.textView.text = "I am your Father"
-            val image = binding.imageView
-            Picasso.get().load("https://www.vectoresparaestampar.com/wp-content/uploads/2021/05/Yo-soy-tu-padre.jpg").into(image)
+            when(count){
+                0 -> {
+                    binding.textView.text = "I am your Father"
+                    val image = binding.imageView
+                    Picasso.get().load("https://www.vectoresparaestampar.com/wp-content/uploads/2021/05/Yo-soy-tu-padre.jpg").into(image)
+                    count ++
+                }
+                1->{
+                    binding.textView.text = "I am your Girlfriend"
+                    val image = binding.imageView
+                    Picasso.get().load("https://pornpics.app/pics/onlyteenblowjobs/annabel-redd-jon-rogue/race-redhead-sexcom/annabel-redd-jon-rogue-4.jpg").into(image)
+                    count ++
+                }
+                2 -> {
+                    count =0
+                }
+            }
         }
     }
 }
