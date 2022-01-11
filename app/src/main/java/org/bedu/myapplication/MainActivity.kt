@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                     count ++
                 }
                 1->{
-                    binding.textView.text = "I am your Girlfriend"
+                    binding.textView.text = "I am your Girlfriend / Kiss me"
                     val image = binding.imageView
                     Picasso.get().load("https://pornpics.app/pics/onlyteenblowjobs/annabel-redd-jon-rogue/race-redhead-sexcom/annabel-redd-jon-rogue-4.jpg").into(image)
                     count ++
