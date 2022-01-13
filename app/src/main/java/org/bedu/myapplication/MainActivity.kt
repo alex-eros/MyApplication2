@@ -25,13 +25,20 @@ class MainActivity : AppCompatActivity() {
                     count ++
                 }
                 1->{
-                    binding.textView.text = "I am your Girlfriend / Kiss me"
+                    binding.textView.text = "I am your Girlfriend "
                     val image = binding.imageView
                     Picasso.get().load("https://pornpics.app/pics/onlyteenblowjobs/annabel-redd-jon-rogue/race-redhead-sexcom/annabel-redd-jon-rogue-4.jpg").into(image)
                     count ++
                 }
                 2 -> {
-                    count =0
+                    binding.textView.text = "Kiss me"
+                    val image = binding.imageView
+                    Picasso.get().load("https://cdni.pornpics.com/1280/7/520/53757440/53757440_035_6e6e.jpg").into(image)
+                    count ++
+
+                }
+                3->{
+                    count = 0
                 }
             }
         }
